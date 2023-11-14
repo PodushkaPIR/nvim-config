@@ -1,0 +1,5 @@
+require("shesh.keymaps")
+require("shesh.options")
+require("shesh.colorscheme")
+require("shesh.plugins")
+require("shesh.plugin_config")
