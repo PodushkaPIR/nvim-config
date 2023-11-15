@@ -24,3 +24,5 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 vim.keymap.set("n", "<leader>e", vim.cmd.NvimTreeFindFileToggle)
 
+vim.keymap.set({"n", "v"}, "<leader>ca", vim.cmd.AutoRunnerAddCommand)
+vim.keymap.set({"n", "v"}, "<leader>cr", vim.cmd.AutoRunnerTermRun)

@@ -41,9 +41,12 @@ return require('packer').startup(function(use)
       require("toggleterm").setup()
   end}
 
-  -- use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
+  use ("krshrimali/nvim-autorunner")
+  -- use('BenGH28/neo-runner.nvim', { run = ':UpdateRemotePlugins'})
+  use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
 
   -- Colorsheme
   use { "ellisonleao/gruvbox.nvim" }
+
 
 end)

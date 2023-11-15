@@ -23,3 +23,6 @@ vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
 vim.g.mapleader = " "
+
+-- vim.g.runner_cpp_compiler = "g++"
+-- vim.g.runner_cpp_options = '-std=c++11 -Wall'
