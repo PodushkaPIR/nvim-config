@@ -30,15 +30,18 @@ return require('packer').startup(function(use)
       config = function() require("nvim-autopairs").setup {} end
   }
 
-  use {
-      'nvim-lualine/lualine.nvim',
-      requires = { 'nvim-tree/nvim-web-devicons', opt = true }
-  }
-  use('nvim-tree/nvim-tree.lua')
+   
+  use('nvim-lualine/lualine.nvim')
+
+  use('nvim-tree/nvim-tree.lua') 
+
+  use('nvim-tree/nvim-web-devicons')
 
   use {"akinsho/toggleterm.nvim", tag = '*', config = function()
       require("toggleterm").setup()
   end}
+
+  -- use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
 
   -- Colorsheme
   use { "ellisonleao/gruvbox.nvim" }
