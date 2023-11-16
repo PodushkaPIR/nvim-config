@@ -41,9 +41,15 @@ return require('packer').startup(function(use)
       require("toggleterm").setup()
   end}
 
-  use ("krshrimali/nvim-autorunner")
+  -- use ("krshrimali/nvim-autorunner")
   -- use('BenGH28/neo-runner.nvim', { run = ':UpdateRemotePlugins'})
   use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+}
 
   -- Colorsheme
   use { "ellisonleao/gruvbox.nvim" }
