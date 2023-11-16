@@ -45,11 +45,14 @@ return require('packer').startup(function(use)
   -- use('BenGH28/neo-runner.nvim', { run = ':UpdateRemotePlugins'})
   use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
   use {
-    'numToStr/Comment.nvim',
-    config = function()
-        require('Comment').setup()
-    end
-}
+      'numToStr/Comment.nvim',
+      config = function()
+          require('Comment').setup()
+      end
+  }
+
+  use('SirVer/ultisnips')
+  use('quangnguyen30192/cmp-nvim-ultisnips')
 
   -- Colorsheme
   use { "ellisonleao/gruvbox.nvim" }
