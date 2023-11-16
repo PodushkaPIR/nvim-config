@@ -33,7 +33,10 @@ require("bufferline").setup({
   },
 })
 
-vim.keymap.set('n', '<leader>ts', '<CMD>BufferLinePickClose<CR>')
+vim.keymap.set('n', '<leader>td', '<CMD>BufferLinePickClose<CR>')
+vim.keymap.set('n', '<leader>ts', '<CMD>BufferLinePick<CR>')
 vim.keymap.set('n', ']b', '<CMD>BufferLineMoveNext<CR>')
 vim.keymap.set('n', '[b', '<CMD>BufferLineMovePrev<CR>')
+vim.keymap.set('n', '<C-l>', '<CMD>BufferLineCycleNext<CR>')
+vim.keymap.set('n', '<C-h>', '<CMD>BufferLineCyclePrev<CR>')
 
