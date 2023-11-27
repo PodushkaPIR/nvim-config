@@ -2,7 +2,6 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-  -- Packer can manage itself
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.4',
 	  requires = { {'nvim-lua/plenary.nvim'} }
@@ -40,9 +39,6 @@ return require('packer').startup(function(use)
   use {"akinsho/toggleterm.nvim", tag = '*', config = function()
       require("toggleterm").setup()
   end}
-
-  -- use ("krshrimali/nvim-autorunner")
-  -- use('BenGH28/neo-runner.nvim', { run = ':UpdateRemotePlugins'})
   use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
   use {
       'numToStr/Comment.nvim',
@@ -56,6 +52,6 @@ return require('packer').startup(function(use)
 
   -- Colorsheme
   use { "ellisonleao/gruvbox.nvim" }
-
+  use { "catppuccin/nvim", as = "catppuccin" }
 
 end)

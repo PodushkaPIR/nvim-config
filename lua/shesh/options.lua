@@ -26,3 +26,8 @@ vim.g.mapleader = " "
 
 -- vim.g.runner_cpp_compiler = "g++"
 -- vim.g.runner_cpp_options = '-std=c++11 -Wall'
+--
+
+vim.g.UltiSnipsExpandTrigger = '<Tab>'
+vim.g.UltiSnipsJumpForwardTrigger='<C-j>'
+vim.g.UltiSnipsJumpBackwardTrigger='<C-k>'
