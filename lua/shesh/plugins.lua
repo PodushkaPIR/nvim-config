@@ -50,6 +50,9 @@ return require('packer').startup(function(use)
   use('SirVer/ultisnips')
   use('quangnguyen30192/cmp-nvim-ultisnips')
 
+  --ROFL
+  use 'eandrju/cellular-automaton.nvim'
+
   -- Colorsheme
   use { "ellisonleao/gruvbox.nvim" }
   use { "catppuccin/nvim", as = "catppuccin" }

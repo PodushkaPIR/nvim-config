@@ -6,4 +6,4 @@ require("shesh.plugin_config.treesitter")
 require("shesh.plugin_config.undotree")
 require("shesh.plugin_config.toggleterm")
 require("shesh.plugin_config.bufferline")
-
+require("shesh.plugin_config.automaton")
